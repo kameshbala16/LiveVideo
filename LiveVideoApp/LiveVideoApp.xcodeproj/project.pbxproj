@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CBC5E242D167F220027856C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E232D167F220027856C /* AppDelegate.swift */; };
+		5CBC5E262D167F220027856C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E252D167F220027856C /* SceneDelegate.swift */; };
+		5CBC5E282D167F220027856C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E272D167F220027856C /* ViewController.swift */; };
+		5CBC5E2B2D167F220027856C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC5E292D167F220027856C /* Main.storyboard */; };
+		5CBC5E2E2D167F220027856C /* LiveVideoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E2C2D167F220027856C /* LiveVideoApp.xcdatamodeld */; };
+		5CBC5E302D167F220027856C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC5E2F2D167F220027856C /* Assets.xcassets */; };
+		5CBC5E332D167F220027856C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC5E312D167F220027856C /* LaunchScreen.storyboard */; };
+		5CBC5E3F2D167F220027856C /* LiveVideoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E3E2D167F220027856C /* LiveVideoAppTests.swift */; };
+		5CBC5E492D167F230027856C /* LiveVideoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E482D167F230027856C /* LiveVideoAppUITests.swift */; };
+		5CBC5E4B2D167F230027856C /* LiveVideoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5E4A2D167F230027856C /* LiveVideoAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CBC5E3B2D167F220027856C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBC5E182D167F220027856C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBC5E1F2D167F220027856C;
+			remoteInfo = LiveVideoApp;
+		};
+		5CBC5E452D167F230027856C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CBC5E182D167F220027856C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CBC5E1F2D167F220027856C;
+			remoteInfo = LiveVideoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CBC5E202D167F220027856C /* LiveVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBC5E232D167F220027856C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CBC5E252D167F220027856C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CBC5E272D167F220027856C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CBC5E2A2D167F220027856C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CBC5E2D2D167F220027856C /* LiveVideoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiveVideoApp.xcdatamodel; sourceTree = "<group>"; };
+		5CBC5E2F2D167F220027856C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CBC5E322D167F220027856C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CBC5E342D167F220027856C /* LiveVideoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiveVideoApp.entitlements; sourceTree = "<group>"; };
+		5CBC5E352D167F220027856C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBC5E3A2D167F220027856C /* LiveVideoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveVideoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBC5E3E2D167F220027856C /* LiveVideoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoAppTests.swift; sourceTree = "<group>"; };
+		5CBC5E442D167F230027856C /* LiveVideoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveVideoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBC5E482D167F230027856C /* LiveVideoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoAppUITests.swift; sourceTree = "<group>"; };
+		5CBC5E4A2D167F230027856C /* LiveVideoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CBC5E1D2D167F220027856C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E372D167F220027856C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E412D167F230027856C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CBC5E172D167F220027856C = {
+			isa = PBXGroup;
+			children = (
+				5CBC5E222D167F220027856C /* LiveVideoApp */,
+				5CBC5E3D2D167F220027856C /* LiveVideoAppTests */,
+				5CBC5E472D167F230027856C /* LiveVideoAppUITests */,
+				5CBC5E212D167F220027856C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CBC5E212D167F220027856C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CBC5E202D167F220027856C /* LiveVideoApp.app */,
+				5CBC5E3A2D167F220027856C /* LiveVideoAppTests.xctest */,
+				5CBC5E442D167F230027856C /* LiveVideoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CBC5E222D167F220027856C /* LiveVideoApp */ = {
+			isa = PBXGroup;
+			children = (
+				5CBC5E232D167F220027856C /* AppDelegate.swift */,
+				5CBC5E252D167F220027856C /* SceneDelegate.swift */,
+				5CBC5E272D167F220027856C /* ViewController.swift */,
+				5CBC5E292D167F220027856C /* Main.storyboard */,
+				5CBC5E2F2D167F220027856C /* Assets.xcassets */,
+				5CBC5E312D167F220027856C /* LaunchScreen.storyboard */,
+				5CBC5E342D167F220027856C /* LiveVideoApp.entitlements */,
+				5CBC5E352D167F220027856C /* Info.plist */,
+				5CBC5E2C2D167F220027856C /* LiveVideoApp.xcdatamodeld */,
+			);
+			path = LiveVideoApp;
+			sourceTree = "<group>";
+		};
+		5CBC5E3D2D167F220027856C /* LiveVideoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBC5E3E2D167F220027856C /* LiveVideoAppTests.swift */,
+			);
+			path = LiveVideoAppTests;
+			sourceTree = "<group>";
+		};
+		5CBC5E472D167F230027856C /* LiveVideoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CBC5E482D167F230027856C /* LiveVideoAppUITests.swift */,
+				5CBC5E4A2D167F230027856C /* LiveVideoAppUITestsLaunchTests.swift */,
+			);
+			path = LiveVideoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CBC5E1F2D167F220027856C /* LiveVideoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBC5E4E2D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoApp" */;
+			buildPhases = (
+				5CBC5E1C2D167F220027856C /* Sources */,
+				5CBC5E1D2D167F220027856C /* Frameworks */,
+				5CBC5E1E2D167F220027856C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveVideoApp;
+			productName = LiveVideoApp;
+			productReference = 5CBC5E202D167F220027856C /* LiveVideoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CBC5E392D167F220027856C /* LiveVideoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBC5E512D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoAppTests" */;
+			buildPhases = (
+				5CBC5E362D167F220027856C /* Sources */,
+				5CBC5E372D167F220027856C /* Frameworks */,
+				5CBC5E382D167F220027856C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBC5E3C2D167F220027856C /* PBXTargetDependency */,
+			);
+			name = LiveVideoAppTests;
+			productName = LiveVideoAppTests;
+			productReference = 5CBC5E3A2D167F220027856C /* LiveVideoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CBC5E432D167F230027856C /* LiveVideoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBC5E542D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoAppUITests" */;
+			buildPhases = (
+				5CBC5E402D167F230027856C /* Sources */,
+				5CBC5E412D167F230027856C /* Frameworks */,
+				5CBC5E422D167F230027856C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CBC5E462D167F230027856C /* PBXTargetDependency */,
+			);
+			name = LiveVideoAppUITests;
+			productName = LiveVideoAppUITests;
+			productReference = 5CBC5E442D167F230027856C /* LiveVideoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CBC5E182D167F220027856C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					5CBC5E1F2D167F220027856C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					5CBC5E392D167F220027856C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 5CBC5E1F2D167F220027856C;
+					};
+					5CBC5E432D167F230027856C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 5CBC5E1F2D167F220027856C;
+					};
+				};
+			};
+			buildConfigurationList = 5CBC5E1B2D167F220027856C /* Build configuration list for PBXProject "LiveVideoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CBC5E172D167F220027856C;
+			productRefGroup = 5CBC5E212D167F220027856C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CBC5E1F2D167F220027856C /* LiveVideoApp */,
+				5CBC5E392D167F220027856C /* LiveVideoAppTests */,
+				5CBC5E432D167F230027856C /* LiveVideoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CBC5E1E2D167F220027856C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBC5E332D167F220027856C /* LaunchScreen.storyboard in Resources */,
+				5CBC5E302D167F220027856C /* Assets.xcassets in Resources */,
+				5CBC5E2B2D167F220027856C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E382D167F220027856C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E422D167F230027856C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CBC5E1C2D167F220027856C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBC5E282D167F220027856C /* ViewController.swift in Sources */,
+				5CBC5E2E2D167F220027856C /* LiveVideoApp.xcdatamodeld in Sources */,
+				5CBC5E242D167F220027856C /* AppDelegate.swift in Sources */,
+				5CBC5E262D167F220027856C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E362D167F220027856C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBC5E3F2D167F220027856C /* LiveVideoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CBC5E402D167F230027856C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBC5E4B2D167F230027856C /* LiveVideoAppUITestsLaunchTests.swift in Sources */,
+				5CBC5E492D167F230027856C /* LiveVideoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CBC5E3C2D167F220027856C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBC5E1F2D167F220027856C /* LiveVideoApp */;
+			targetProxy = 5CBC5E3B2D167F220027856C /* PBXContainerItemProxy */;
+		};
+		5CBC5E462D167F230027856C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CBC5E1F2D167F220027856C /* LiveVideoApp */;
+			targetProxy = 5CBC5E452D167F230027856C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CBC5E292D167F220027856C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBC5E2A2D167F220027856C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CBC5E312D167F220027856C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBC5E322D167F220027856C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CBC5E4C2D167F230027856C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CBC5E4D2D167F230027856C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CBC5E4F2D167F230027856C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiveVideoApp/LiveVideoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveVideoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CBC5E502D167F230027856C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiveVideoApp/LiveVideoApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveVideoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CBC5E522D167F230027856C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveVideoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveVideoApp";
+			};
+			name = Debug;
+		};
+		5CBC5E532D167F230027856C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveVideoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveVideoApp";
+			};
+			name = Release;
+		};
+		5CBC5E552D167F230027856C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveVideoApp;
+			};
+			name = Debug;
+		};
+		5CBC5E562D167F230027856C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FD5T6PM798;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kameshbala.LiveVideoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveVideoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CBC5E1B2D167F220027856C /* Build configuration list for PBXProject "LiveVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBC5E4C2D167F230027856C /* Debug */,
+				5CBC5E4D2D167F230027856C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBC5E4E2D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBC5E4F2D167F230027856C /* Debug */,
+				5CBC5E502D167F230027856C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBC5E512D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBC5E522D167F230027856C /* Debug */,
+				5CBC5E532D167F230027856C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CBC5E542D167F230027856C /* Build configuration list for PBXNativeTarget "LiveVideoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBC5E552D167F230027856C /* Debug */,
+				5CBC5E562D167F230027856C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CBC5E2C2D167F220027856C /* LiveVideoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CBC5E2D2D167F220027856C /* LiveVideoApp.xcdatamodel */,
+			);
+			currentVersion = 5CBC5E2D2D167F220027856C /* LiveVideoApp.xcdatamodel */;
+			path = LiveVideoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CBC5E182D167F220027856C /* Project object */;
+}
