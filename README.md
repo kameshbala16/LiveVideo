@@ -1,10 +1,9 @@
 # LIVEr Shorts Sample Project
 
 ## Overview
+You can view the full video playback by [downloading it here](LIVEr_compressed.mp4).
 
-The **Live Video App** is a feature-rich iOS application built using **Swift**, **UIKit**, and **AVFoundation**. The app displays a fullscreen **paginated collection view** with embedded video players that load content dynamically from a JSON file. Each video cell supports rich interactivity, including a transparent scrolling comments section, animated UI elements, and playback controls.
-![Full Video Playback](LIVEr_compressed.mp4)
-
+## Features
 ### 1. Fullscreen CollectionView with Video Player
 ![User Section](Screenshot-1.png)
 - **Fullscreen Cells**: Each `UICollectionViewCell` occupies the entire screen, ensuring only one cell is visible at a time.
@@ -39,7 +38,7 @@ The **Live Video App** is a feature-rich iOS application built using **Swift**, 
   - After posting, the new comment animates into the scrolling table view.
 
 ### 3. Double Tap Heart Animation
-![Heart Animation](Heart_animation.mp4)
+You can view the heart animation by [downloading it here](Heart_animation.mp4).
 
 - **Heart Animation**:
   - Double-tap anywhere on the video player to trigger a floating heart animation.
