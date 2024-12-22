@@ -16,6 +16,7 @@ class ShortCVCell: UICollectionViewCell {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var commentsViewWidth: NSLayoutConstraint!
     @IBOutlet weak var containerView: UIView!
+    
     private let playerView = AVPlayerView()
     var comments : [Comment] = []
     var allComments : [Comment] = []
@@ -24,6 +25,7 @@ class ShortCVCell: UICollectionViewCell {
     func configureCell(video: Video, comments: [Comment]) {
         timer?.invalidate()
         containerView.frame = contentView.frame
+        containerView.backgroundColor = .black
         playerView.frame = contentView.frame
         containerView.addSubview(playerView)
         setupPlayer(url: video.video)
@@ -44,6 +46,7 @@ class ShortCVCell: UICollectionViewCell {
     }
     private func setupPlayer(url: String) {
         guard let videoURL = URL(string: url) else { return }
+        playerView.stop()
         playerView.configurePlayer(with: videoURL)
     }
     private func startAddingComments() {

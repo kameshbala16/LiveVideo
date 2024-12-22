@@ -105,7 +105,6 @@ extension ShortsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         cell.configureCell(video: shortsVM.videos[indexPath.row], comments: shortsVM.comments)
         return cell
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return UIScreen.main.bounds.size
     }
