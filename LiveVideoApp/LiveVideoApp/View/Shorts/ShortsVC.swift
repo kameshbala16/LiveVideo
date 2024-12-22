@@ -34,7 +34,6 @@ class ShortsVC: UIViewController {
             if success {
                 DispatchQueue.main.async {
                     self.shortsCV.reloadData()
-                    AlertView.shared.showActionSheet(on: self, isSuccess: true, message: "Data Fetched Successfully")
                 }
             } else {
                 print("Error fetching videos: \(error?.localizedDescription ?? "")")
@@ -49,14 +48,6 @@ class ShortsVC: UIViewController {
         shortsCV.contentInset = .zero
         shortsCV.contentInsetAdjustmentBehavior = .never
         shortsCV.translatesAutoresizingMaskIntoConstraints = false
-    }
-    func randomColor() -> UIColor {
-        return UIColor(
-            red: CGFloat.random(in: 0...1),
-            green: CGFloat.random(in: 0...1),
-            blue: CGFloat.random(in: 0...1),
-            alpha: 1.0
-        )
     }
 
 }
