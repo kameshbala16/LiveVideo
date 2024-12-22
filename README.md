@@ -52,6 +52,8 @@ The **Live Video App** is a feature-rich iOS application built using **Swift**, 
 - **SDWebImage Integration**:
   - Efficiently handles image caching and asynchronous loading for profile pictures.
 - **Play/Pause on Tap**:
+  ![Play Video](Screenshot-2.png)
+  ![Pause Video](Screenshot-4.png)
   - Single-tap gesture toggles playback state with an optional play/pause icon animation.
 ---
 
