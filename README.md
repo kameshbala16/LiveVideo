@@ -6,15 +6,17 @@ You can view the full video playback by [downloading it here](LIVEr_compressed.m
 ## Features
 ### 1. Fullscreen CollectionView with Video Player
 ![User Section](Screenshot-1.png)
-- **Fullscreen Cells**: Each `UICollectionViewCell` occupies the entire screen, ensuring only one cell is visible at a time.
-- **Paginated Navigation**: Swipe up or down to navigate between videos.
+- **Fullscreen Cells**:
+  - Each `UICollectionViewCell` occupies the entire screen, ensuring only one cell is visible at a time.
+- **Paginated Navigation**:
+  - Swipe up or down to navigate between videos.
 - **Video Playback**:
   - Automatically plays video on cell load.
   - Videos loop seamlessly.
   - Supports play/pause functionality on a single tap.
-- - **User Section**:
-- Displays **username**, **profile picture**, **viewers**, and **likes** over the video player.
-- - **Rose Counter**:
+- **User Section**:
+  - Displays **username**, **profile picture**, **viewers**, and **likes** over the video player.
+- **Rose Counter**:
   - Displays the number of roses sent by users.
   - Updates dynamically with animation using a `didSet` property.
 - **Post, Gift, and Rose Actions**:
