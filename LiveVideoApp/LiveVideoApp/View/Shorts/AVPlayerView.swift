@@ -11,6 +11,7 @@ import AVKit
 class AVPlayerView: UIView {
     private var playerLayer: AVPlayerLayer?
     private var player: AVPlayer?
+    private var playerItemDidReachEndObserver: Any?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,9 +40,19 @@ class AVPlayerView: UIView {
         stop()
         player = AVPlayer(url: url)
         playerLayer?.player = player
+        playerItemDidReachEndObserver = NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: player?.currentItem,
+            queue: .main
+        ) { [weak self] _ in
+            self?.loopPlayer()
+        }
         play()
     }
-    
+    private func loopPlayer() {
+        player?.seek(to: .zero)
+        player?.play()
+    }
     func play() {
         player?.play()
     }
@@ -55,6 +66,10 @@ class AVPlayerView: UIView {
         player?.seek(to: .zero)
         playerLayer?.player = nil
         player = nil
+        if let observer = playerItemDidReachEndObserver {
+            NotificationCenter.default.removeObserver(observer)
+            playerItemDidReachEndObserver = nil
+        }
     }
     deinit {
         stop()

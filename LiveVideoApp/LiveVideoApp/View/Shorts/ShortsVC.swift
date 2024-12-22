@@ -84,11 +84,16 @@ class ShortsVC: UIViewController {
     }
     private func getActiveCell() -> UICollectionViewCell? {
         for cell in shortsCV.visibleCells {
+            print("Active Cell: \(cell)")
             if let shortCell = cell as? ShortCVCell, shortCell.commentTF.isFirstResponder {
                 return shortCell
             }
         }
         return nil
+    }
+    private func getVisibleIndexPath() -> IndexPath? {
+        let centerPoint = CGPoint(x: shortsCV.bounds.midX, y: shortsCV.bounds.midY)
+        return shortsCV.indexPathForItem(at: centerPoint)
     }
 }
 
@@ -113,5 +118,19 @@ extension ShortsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard let visibleIndexPath = getVisibleIndexPath() else { return }
+        
+        for cell in shortsCV.visibleCells {
+            guard let shortCell = cell as? ShortCVCell else { continue }
+            if let indexPath = shortsCV.indexPath(for: cell), indexPath != visibleIndexPath {
+                shortCell.playerView.stop()
+            }
+        }
+        
+        if let activeCell = shortsCV.cellForItem(at: visibleIndexPath) as? ShortCVCell {
+            activeCell.playerView.play()
+        }
     }
 }

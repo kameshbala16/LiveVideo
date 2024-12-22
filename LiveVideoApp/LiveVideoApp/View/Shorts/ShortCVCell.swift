@@ -17,7 +17,7 @@ class ShortCVCell: UICollectionViewCell {
     @IBOutlet weak var commentsViewWidth: NSLayoutConstraint!
     @IBOutlet weak var containerView: UIView!
     
-    private let playerView = AVPlayerView()
+    let playerView = AVPlayerView()
     var comments : [Comment] = []
     var allComments : [Comment] = []
     private var timer: Timer?
