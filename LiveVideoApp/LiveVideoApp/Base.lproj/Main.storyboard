@@ -614,6 +614,7 @@
                                             <outlet property="giftView" destination="aKF-4V-laC" id="jAh-Qr-NSK"/>
                                             <outlet property="gradientView" destination="aOh-09-QZD" id="Yjb-7d-yJT"/>
                                             <outlet property="postView" destination="VlJ-JD-HiS" id="qjy-Yb-AXm"/>
+                                            <outlet property="roseCountLabel" destination="AQP-hl-lby" id="E65-Vo-o8y"/>
                                             <outlet property="roseView" destination="STe-UX-vgV" id="qm2-qw-leS"/>
                                         </connections>
                                     </collectionViewCell>

@@ -8,6 +8,7 @@
 import UIKit
 
 class ShortCVCell: UICollectionViewCell {
+    @IBOutlet weak var roseCountLabel: UILabel!
     @IBOutlet weak var postView: UIView!
     @IBOutlet weak var giftView: UIView!
     @IBOutlet weak var roseView: UIView!
@@ -22,12 +23,35 @@ class ShortCVCell: UICollectionViewCell {
     var allComments : [Comment] = []
     private var timer: Timer?
     var commentIndex = 4
+    var roseCount = 0 {
+        didSet {
+            updateRoseCount()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         configureGestureRecognizer()
         commentTF.returnKeyType = .send
         commentTF.delegate = self
+    }
+    func configureCell(video: Video, comments: [Comment]) {
+        timer?.invalidate()
+        containerView.frame = contentView.frame
+        containerView.backgroundColor = .black
+        playerView.frame = contentView.frame
+        containerView.addSubview(playerView)
+        setupPlayer(url: video.video)
+        // Bottom view width adjust to device size
+        commentsViewWidth.constant = UIScreen.main.bounds.size.width - 40
+        setupCommentsTable()
+        self.allComments = comments
+        self.comments = Array(comments.prefix(4))
+        startAddingComments()
+        updateRoseCount()
+        DispatchQueue.main.async {
+            self.commentsTable.reloadData()
+        }
     }
     func configureGestureRecognizer() {
         // Single Tap
@@ -78,9 +102,24 @@ class ShortCVCell: UICollectionViewCell {
     }
     @objc func postRose() {
         print("Post Rose")
+        if roseCount < 5 {
+            roseCount += 1
+        }
     }
     @objc func postGift() {
         print("Post Gift")
+    }
+    func updateRoseCount() {
+        roseCountLabel.attributedText = returnRoseLabel()
+    }
+    func returnRoseLabel() -> NSMutableAttributedString {
+        let roseAttribute = NSMutableAttributedString()
+        let countAttribute = NSAttributedString(string: "\(roseCount)", attributes: [NSAttributedString.Key.foregroundColor: UIColor.appOrange, NSAttributedString.Key.font: AppFont().setFont(size: 18)])
+        let maxCountAttribute = NSAttributedString(string: "/5", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: AppFont().setFont(size: 18)])
+        
+        roseAttribute.append(countAttribute)
+        roseAttribute.append(maxCountAttribute)
+        return roseAttribute
     }
     func addComment(comment: String) {
         // After a comment is added, put it into the comments scroll and scroll the other comments up with animation.
@@ -89,23 +128,6 @@ class ShortCVCell: UICollectionViewCell {
         let picURL = "https://media.licdn.com/dms/image/v2/D5603AQF8UL1R7k8vAw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1675819091439?e=1740614400&v=beta&t=IRMS-U7QAuqAgCSb2WKq0n_Mrj63x9nCFFUdWXDY4KA"
         let commentObject = Comment(id: ID, username: username, picURL: picURL, comment: comment)
         allComments.insert(commentObject, at: comments.count)
-        startAddingComments()
-        DispatchQueue.main.async {
-            self.commentsTable.reloadData()
-        }
-    }
-    func configureCell(video: Video, comments: [Comment]) {
-        timer?.invalidate()
-        containerView.frame = contentView.frame
-        containerView.backgroundColor = .black
-        playerView.frame = contentView.frame
-        containerView.addSubview(playerView)
-        setupPlayer(url: video.video)
-        // Bottom view width adjust to device size
-        commentsViewWidth.constant = UIScreen.main.bounds.size.width - 40
-        setupCommentsTable()
-        self.allComments = comments
-        self.comments = Array(comments.prefix(4))
         startAddingComments()
         DispatchQueue.main.async {
             self.commentsTable.reloadData()
@@ -142,6 +164,7 @@ class ShortCVCell: UICollectionViewCell {
             }
         }
     }
+    
 }
 // MARK: - TextField Delegate Methods
 extension ShortCVCell: UITextFieldDelegate {

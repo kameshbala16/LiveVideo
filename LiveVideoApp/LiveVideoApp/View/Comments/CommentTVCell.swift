@@ -41,6 +41,4 @@ class CommentTVCell: UITableViewCell {
         homeAttribute.append(commentAttribute)
         return homeAttribute
     }
-    
-
 }
