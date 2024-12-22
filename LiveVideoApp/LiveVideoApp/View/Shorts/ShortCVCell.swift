@@ -8,6 +8,10 @@
 import UIKit
 
 class ShortCVCell: UICollectionViewCell {
+    @IBOutlet weak var postView: UIView!
+    @IBOutlet weak var giftView: UIView!
+    @IBOutlet weak var roseView: UIView!
+    @IBOutlet weak var commentTF: TextFieldDesign!
     @IBOutlet weak var commentsTable: UITableView!
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var commentsViewWidth: NSLayoutConstraint!

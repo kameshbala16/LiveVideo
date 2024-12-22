@@ -207,7 +207,7 @@
                                                                         <constraint firstAttribute="width" constant="36" id="ldI-Q9-6pW"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91u-vR-lm7">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91u-vR-lm7">
                                                                     <rect key="frame" x="0.0" y="36" width="36" height="14"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="14" id="rKs-4R-YeC"/>
@@ -607,10 +607,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="852"/>
                                         <connections>
+                                            <outlet property="commentTF" destination="fin-uH-vmW" id="Slm-op-Rfu"/>
                                             <outlet property="commentsTable" destination="HdA-Ct-cxM" id="mj3-oH-c8w"/>
                                             <outlet property="commentsViewWidth" destination="kir-jy-SrO" id="buW-zI-iF5"/>
                                             <outlet property="containerView" destination="wc1-Cl-oOp" id="696-ua-gb7"/>
+                                            <outlet property="giftView" destination="aKF-4V-laC" id="jAh-Qr-NSK"/>
                                             <outlet property="gradientView" destination="aOh-09-QZD" id="Yjb-7d-yJT"/>
+                                            <outlet property="postView" destination="VlJ-JD-HiS" id="qjy-Yb-AXm"/>
+                                            <outlet property="roseView" destination="STe-UX-vgV" id="qm2-qw-leS"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
