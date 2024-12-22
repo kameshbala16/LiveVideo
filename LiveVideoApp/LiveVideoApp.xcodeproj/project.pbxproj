@@ -51,6 +51,9 @@
 		5CBC5EA22D17DB3A0027856C /* CommentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5EA12D17DB3A0027856C /* CommentTVCell.swift */; };
 		5CBC5EA42D17DE880027856C /* ImageViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5EA32D17DE880027856C /* ImageViewDesign.swift */; };
 		5CBC5EA62D17E5790027856C /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5EA52D17E5790027856C /* AppFont.swift */; };
+		5CBC5EA92D17E8340027856C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EA82D17E8340027856C /* SDWebImage */; };
+		5CBC5EAB2D17E8340027856C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EAA2D17E8340027856C /* SDWebImageMapKit */; };
+		5CBC5EAE2D17E8960027856C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EAD2D17E8960027856C /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +130,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBC5EAB2D17E8340027856C /* SDWebImageMapKit in Frameworks */,
+				5CBC5EA92D17E8340027856C /* SDWebImage in Frameworks */,
+				5CBC5EAE2D17E8960027856C /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,11 @@
 			dependencies = (
 			);
 			name = LiveVideoApp;
+			packageProductDependencies = (
+				5CBC5EA82D17E8340027856C /* SDWebImage */,
+				5CBC5EAA2D17E8340027856C /* SDWebImageMapKit */,
+				5CBC5EAD2D17E8960027856C /* IQKeyboardManagerSwift */,
+			);
 			productName = LiveVideoApp;
 			productReference = 5CBC5E202D167F220027856C /* LiveVideoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -402,6 +413,10 @@
 				Base,
 			);
 			mainGroup = 5CBC5E172D167F220027856C;
+			packageReferences = (
+				5CBC5EA72D17E8340027856C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5CBC5EAC2D17E8960027856C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 5CBC5E212D167F220027856C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -831,6 +846,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CBC5EA72D17E8340027856C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+		5CBC5EAC2D17E8960027856C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CBC5EA82D17E8340027856C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CBC5EA72D17E8340027856C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		5CBC5EAA2D17E8340027856C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CBC5EA72D17E8340027856C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		5CBC5EAD2D17E8960027856C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CBC5EAC2D17E8960027856C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5CBC5E2C2D167F220027856C /* LiveVideoApp.xcdatamodeld */ = {

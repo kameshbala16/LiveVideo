@@ -49,22 +49,21 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOh-09-QZD" customClass="GradientView" customModule="LiveVideoApp" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="532" width="393" height="320"/>
+                                                    <rect key="frame" x="0.0" y="492" width="393" height="360"/>
                                                     <subviews>
-                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-Ct-cxM">
-                                                            <rect key="frame" x="8" y="8" width="377" height="234"/>
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HdA-Ct-cxM">
+                                                            <rect key="frame" x="8" y="8" width="265" height="274"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <prototypes>
                                                                 <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="44" id="28W-NO-tcp" customClass="CommentTVCell" customModule="LiveVideoApp" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="50" width="377" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="50" width="265" height="44"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="28W-NO-tcp" id="0k4-zX-Ujg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="377" height="44"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="265" height="44"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xtr-jd-cGc" customClass="ImageViewDesign" customModule="LiveVideoApp" customModuleProvider="target">
-                                                                                <rect key="frame" x="12" y="8" width="30" height="28"/>
-                                                                                <color key="backgroundColor" name="appOrange"/>
+                                                                                <rect key="frame" x="12" y="8" width="30" height="30"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="30" id="Og3-JP-bmG"/>
                                                                                     <constraint firstAttribute="height" constant="30" id="rQz-C0-ybd"/>
@@ -76,7 +75,7 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </imageView>
                                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet Lorem ipsum dolor sit er elit lamet" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9C-zh-QWH">
-                                                                                <rect key="frame" x="50" y="0.0" width="315" height="44"/>
+                                                                                <rect key="frame" x="50" y="0.0" width="203" height="44"/>
                                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
@@ -86,11 +85,9 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="bottom" secondItem="V9C-zh-QWH" secondAttribute="bottom" id="1pQ-Mo-XKZ"/>
                                                                             <constraint firstAttribute="trailing" secondItem="V9C-zh-QWH" secondAttribute="trailing" constant="12" id="biZ-8N-w3M"/>
-                                                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xtr-jd-cGc" secondAttribute="bottom" constant="8" id="dKs-A3-lhA"/>
                                                                             <constraint firstItem="V9C-zh-QWH" firstAttribute="leading" secondItem="xtr-jd-cGc" secondAttribute="trailing" constant="8" symbolic="YES" id="gCk-54-phe"/>
                                                                             <constraint firstItem="xtr-jd-cGc" firstAttribute="top" secondItem="0k4-zX-Ujg" secondAttribute="top" constant="8" id="kVF-Wh-Xa9"/>
                                                                             <constraint firstItem="V9C-zh-QWH" firstAttribute="top" secondItem="0k4-zX-Ujg" secondAttribute="top" id="lx4-cw-wbg"/>
-                                                                            <constraint firstItem="xtr-jd-cGc" firstAttribute="centerY" secondItem="V9C-zh-QWH" secondAttribute="centerY" id="xwy-gR-vn0"/>
                                                                             <constraint firstItem="xtr-jd-cGc" firstAttribute="leading" secondItem="0k4-zX-Ujg" secondAttribute="leading" constant="12" id="yZD-so-0SY"/>
                                                                         </constraints>
                                                                     </tableViewCellContentView>
@@ -109,10 +106,10 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="HdA-Ct-cxM" secondAttribute="trailing" constant="8" id="VsW-1b-Jci"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HdA-Ct-cxM" secondAttribute="trailing" constant="120" id="VsW-1b-Jci"/>
                                                         <constraint firstItem="HdA-Ct-cxM" firstAttribute="leading" secondItem="aOh-09-QZD" secondAttribute="leading" constant="8" id="Z6X-ib-7eN"/>
                                                         <constraint firstItem="HdA-Ct-cxM" firstAttribute="top" secondItem="aOh-09-QZD" secondAttribute="top" constant="8" id="df6-fU-ugp"/>
-                                                        <constraint firstAttribute="height" constant="320" id="ueC-Nu-Ih3"/>
+                                                        <constraint firstAttribute="height" constant="360" id="ueC-Nu-Ih3"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkY-i4-pYj">
@@ -662,9 +659,6 @@
         <image name="share" width="24" height="24"/>
         <image name="star" width="12" height="12"/>
         <image name="user" width="13" height="13"/>
-        <namedColor name="appOrange">
-            <color red="1" green="0.71799999475479126" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="appRed">
             <color red="1" green="0.15700000524520874" blue="0.18000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

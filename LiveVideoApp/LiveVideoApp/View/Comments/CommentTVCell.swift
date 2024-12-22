@@ -23,6 +23,12 @@ class CommentTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureComments(comment: Comment) {
+        if let url = URL(string: comment.picURL) {
+            profileImage.sd_setImage(with: url)
+        } else {  
+            profileImage.image = UIImage(named: "user")
+            profileImage.backgroundColor = .appGrey.withAlphaComponent(0.4)
+        }
         commentsTV.attributedText = returnHomeDetailTV(comment: comment)
     }
     func returnHomeDetailTV(comment: Comment) -> NSMutableAttributedString {
@@ -34,5 +40,6 @@ class CommentTVCell: UITableViewCell {
         homeAttribute.append(commentAttribute)
         return homeAttribute
     }
+    
 
 }

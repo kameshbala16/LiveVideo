@@ -47,6 +47,7 @@ class ShortsVC: UIViewController {
         shortsCV.isPagingEnabled = true
         shortsCV.contentInset = .zero
         shortsCV.contentInsetAdjustmentBehavior = .never
+        shortsCV.allowsSelection = false
         shortsCV.translatesAutoresizingMaskIntoConstraints = false
     }
 
