@@ -74,4 +74,30 @@ final class AlertView {
         
         return container
     }
+    
+    // MARK: - Play Pause Alert Animation
+    func showAlert(isPlaying: Bool, on view: UIView) {
+        let alertIcon = UIImageView(image: UIImage(systemName: isPlaying ? "play.fill" : "pause.fill"))
+        alertIcon.contentMode = .scaleAspectFit
+        alertIcon.alpha = 0.0
+        alertIcon.translatesAutoresizingMaskIntoConstraints = false
+        alertIcon.tintColor = .white
+        view.addSubview(alertIcon)
+        
+        NSLayoutConstraint.activate([
+            alertIcon.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            alertIcon.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            alertIcon.widthAnchor.constraint(equalToConstant: 60),
+            alertIcon.heightAnchor.constraint(equalToConstant: 60)
+        ])
+        
+        UIView.animate(withDuration: 1.0) {
+            alertIcon.alpha = 1
+        } completion: { success in
+            UIView.animate(withDuration: 1.0) {
+                alertIcon.alpha = 0
+                alertIcon.removeFromSuperview()
+            }
+        }
+    }
 }

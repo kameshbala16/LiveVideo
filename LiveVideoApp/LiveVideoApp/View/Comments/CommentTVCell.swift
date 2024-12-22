@@ -23,6 +23,7 @@ class CommentTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureComments(comment: Comment) {
+        // Each comment should display the username, profilePictureURL, and comment.
         if let url = URL(string: comment.picURL) {
             profileImage.sd_setImage(with: url)
         } else {  

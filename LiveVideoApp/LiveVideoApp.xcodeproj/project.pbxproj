@@ -54,6 +54,7 @@
 		5CBC5EA92D17E8340027856C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EA82D17E8340027856C /* SDWebImage */; };
 		5CBC5EAB2D17E8340027856C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EAA2D17E8340027856C /* SDWebImageMapKit */; };
 		5CBC5EAE2D17E8960027856C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBC5EAD2D17E8960027856C /* IQKeyboardManagerSwift */; };
+		5CBC5EB02D185F6F0027856C /* HeartAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC5EAF2D185F6F0027856C /* HeartAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		5CBC5EA12D17DB3A0027856C /* CommentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTVCell.swift; sourceTree = "<group>"; };
 		5CBC5EA32D17DE880027856C /* ImageViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDesign.swift; sourceTree = "<group>"; };
 		5CBC5EA52D17E5790027856C /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		5CBC5EAF2D185F6F0027856C /* HeartAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				5CBC5E602D16D5BF0027856C /* Resources */,
 				5CBC5E6E2D16DA800027856C /* Constants.swift */,
 				5CBC5E702D16E41F0027856C /* AlertView.swift */,
+				5CBC5EAF2D185F6F0027856C /* HeartAnimation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				5CBC5E5F2D16D09D0027856C /* ShortCVCell.swift in Sources */,
 				5CBC5EA22D17DB3A0027856C /* CommentTVCell.swift in Sources */,
 				5CBC5E762D17256C0027856C /* ViewDesign.swift in Sources */,
+				5CBC5EB02D185F6F0027856C /* HeartAnimation.swift in Sources */,
 				5CBC5E242D167F220027856C /* AppDelegate.swift in Sources */,
 				5CBC5E6A2D16D81B0027856C /* ShortsVM.swift in Sources */,
 				5CBC5E262D167F220027856C /* SceneDelegate.swift in Sources */,

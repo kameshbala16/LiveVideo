@@ -12,6 +12,7 @@ class AVPlayerView: UIView {
     private var playerLayer: AVPlayerLayer?
     private var player: AVPlayer?
     private var playerItemDidReachEndObserver: Any?
+    var isPlaying = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,6 +41,7 @@ class AVPlayerView: UIView {
         stop()
         player = AVPlayer(url: url)
         playerLayer?.player = player
+        // Video should automatically play and loop.
         playerItemDidReachEndObserver = NotificationCenter.default.addObserver(
             forName: .AVPlayerItemDidPlayToEndTime,
             object: player?.currentItem,
@@ -51,18 +53,20 @@ class AVPlayerView: UIView {
     }
     private func loopPlayer() {
         player?.seek(to: .zero)
-        player?.play()
+        play()
     }
     func play() {
         player?.play()
+        isPlaying = true
     }
     
     func pause() {
         player?.pause()
+        isPlaying = false
     }
     
     func stop() {
-        player?.pause()
+        pause()
         player?.seek(to: .zero)
         playerLayer?.player = nil
         player = nil

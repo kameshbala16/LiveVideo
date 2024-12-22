@@ -20,6 +20,7 @@ class ShortsVC: UIViewController {
         setupCollectionView()
         fetchVideos()
         registerForKeyboardNotifications()
+        setupKeyboardDismissGesture()
     }
     private func registerForKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -58,6 +59,15 @@ class ShortsVC: UIViewController {
         shortsCV.contentInsetAdjustmentBehavior = .never
         shortsCV.allowsSelection = false
         shortsCV.translatesAutoresizingMaskIntoConstraints = false
+    }
+    private func setupKeyboardDismissGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
+
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     // Show keyboard with correct offset position
     @objc private func keyboardWillShow(_ notification: Notification) {
@@ -111,6 +121,7 @@ extension ShortsVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Each cell should display full screen, so that only one player is visible at a time.
         return UIScreen.main.bounds.size
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
