@@ -22,7 +22,7 @@ class ShortCVCell: UICollectionViewCell {
     var comments : [Comment] = []
     var allComments : [Comment] = []
     private var timer: Timer?
-    var commentIndex = 4
+    var commentIndex = 0
     var roseCount = 0 {
         didSet {
             updateRoseCount()
@@ -34,6 +34,7 @@ class ShortCVCell: UICollectionViewCell {
         configureGestureRecognizer()
         commentTF.returnKeyType = .send
         commentTF.delegate = self
+        setupCommentsTable()
     }
     func configureCell(video: Video, comments: [Comment]) {
         timer?.invalidate()
@@ -44,14 +45,18 @@ class ShortCVCell: UICollectionViewCell {
         setupPlayer(url: video.video)
         // Bottom view width adjust to device size
         commentsViewWidth.constant = UIScreen.main.bounds.size.width - 40
-        setupCommentsTable()
-        self.allComments = comments
-        self.comments = Array(comments.prefix(4))
+        if self.allComments.isEmpty || validateArray() {
+            self.allComments = comments
+            self.comments = Array(comments.prefix(4))
+        }
         startAddingComments()
         updateRoseCount()
         DispatchQueue.main.async {
             self.commentsTable.reloadData()
         }
+    }
+    func validateArray() -> Bool {
+        return allComments.count == comments.count
     }
     func configureGestureRecognizer() {
         // Single Tap
@@ -137,6 +142,8 @@ class ShortCVCell: UICollectionViewCell {
         commentsTable.delegate = self
         commentsTable.dataSource = self
         commentsTable.addTopGradientMask()
+        allComments.removeAll()
+        comments.removeAll()
     }
     private func setupPlayer(url: String) {
         guard let videoURL = URL(string: url) else { return }
@@ -144,11 +151,10 @@ class ShortCVCell: UICollectionViewCell {
         playerView.configurePlayer(with: videoURL)
     }
     private func startAddingComments() {
-        timer?.invalidate()
         // Adding comments every 2 seconds
+        commentIndex = comments.count
         timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { [weak self] _ in
             guard let self = self else { return }
-            
             if commentIndex < self.allComments.count {
                 self.comments.append(self.allComments[commentIndex])
                 let indexPath = IndexPath(row: self.comments.count - 1, section: 0)
