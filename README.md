@@ -1,4 +1,4 @@
-# LIVEr Shorts Sample Project
+# Live Video Shorts Sample Project
 
 ## Overview
 You can view the full video playback by [downloading it here](LIVEr_compressed.mp4).
