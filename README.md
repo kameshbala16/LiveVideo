@@ -1,8 +1,5 @@
 # Live Video Shorts Sample Project
 
-## Overview
-You can view the full video playback by [downloading it here](LIVEr_compressed.mp4).
-
 ## Features
 ### 1. Fullscreen CollectionView with Video Player
 ![User Section](Screenshot-1.png)
